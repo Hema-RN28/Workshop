@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#fcf8ff", "primary-fixed": "#e8deff", "inverse-on-surface": "#f2efff", "on-secondary-container": "#622800", "surface": "#fcf8ff", "on-surface": "#1a1a28", "on-primary-fixed": "#20005f", "surface-container": "#efecff", "on-error-container": "#93000a", "outline-variant": "#cac4d5", "secondary-container": "#ff7f2a", "error": "#ba1a1a", "on-tertiary-fixed": "#002113", "on-secondary-fixed-variant": "#773300", "tertiary-fixed-dim": "#4edea3", "inverse-surface": "#2f2f3e", "inverse-primary": "#cdbdff", "primary": "#3f139d", "surface-container-highest": "#e3e0f4", "surface-container-low": "#f5f2ff", "surface-container-lowest": "#ffffff", "surface-tint": "#6646c5", "primary-container": "#5634b4", "tertiary-container": "#005a3c", "tertiary": "#00402a", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#4e2aac", "on-secondary-fixed": "#331200", "on-tertiary-fixed-variant": "#005236", "background": "#fcf8ff", "on-background": "#1a1a28", "secondary": "#9c4500", "on-surface-variant": "#494553", "surface-dim": "#dad8ec", "error-container": "#ffdad6", "surface-container-high": "#e9e6fa", "on-primary-container": "#c7b6ff", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#cdbdff", "on-tertiary-container": "#46d89d", "secondary-fixed-dim": "#ffb68e", "on-error": "#ffffff", "secondary-fixed": "#ffdbca", "on-primary": "#ffffff", "outline": "#7a7585", "on-tertiary": "#ffffff", "surface-variant": "#e3e0f4" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-sm": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "gutter-sm": "1rem", "margin": "2rem", "gutter": "1.5rem" }, fontFamily: { "body-sm": ["Inter"], "data-tabular": ["Inter"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "data-metric": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "data-metric": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-surface-container-highest"><div class="h-16 w-full max-w-[1440px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-sm"><img alt="EventPulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VjuFDCPp_-L-wDQI8-K5zdOnv_RySNSJ-zph-sagTAZJOuvcLfSgA1nRcB5hudoBfgSmXtCqLhCtBtr8b8uNSUEmB4_P412-D4QXOmCPgtzOIJrz3yjbUJjLefw012GPHvs_L8QMh0xssGe_gyhQoSTacyqWKIA43AsWsTl62SjIj5dNq_kYY6Lh_uhYQDDllJuDDXYAsiR7--1I7mo5mxAVB4SjoH3DUNms87HXe1Pg"/><span class="font-headline-sm text-headline-sm text-primary">EventPulse</span></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="explore-events" href="#">Explore Events</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-registrations" href="#">My Registrations</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="organizer-portal" href="#">Organizer Portal</a><a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="documentation-and-api" href="#">Documentation &amp; API</a></nav></div><div class="flex items-center gap-space-md"><span class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm border border-outline-variant">Role: Organizer</span><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-path="create-event" href="#">Create Event</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoBktYDvkxRYQyFQnjuFPCMPINOcUPQrqjfagUWUiiHvX3UHXKUSq3OAXZ38Sxk7dKZ2OR7gXaBuVsALDveyjcvBYtWVhaNSyAUkuIfPICCu0i2df4BD_Pg3TCTZzUEg58xDSIIbmICRvgYbcn0cd4SUh6U7bzIzBCyFnA1roD9AR33i6DCiEbc_MascVqGXqSlnuvueL0dBr-FIS4mS_OC_LAsFFA5LKZAPiPt7gd"/></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Top Navigation / Breadcrumbs & Telemetry Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<nav class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>Events</span>
+</a>
+<span class="text-outline">/</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate max-w-xs sm:max-w-md">Global Tech Summit 2025</span>
+</nav>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-data-tabular">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Flask/Supabase Sync: Active</span>
+</span>
+<span class="text-outline-variant">|</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">Latency: 28ms</span>
+</div>
+</div>
+<!-- Main Content Grid (70% Detail, 30% Sticky Action Card) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Event In-Depth Details (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Header Banner & Core Identity Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold tracking-wide uppercase">
+              Status: OPEN
+            </span>
+<span class="inline-flex items-center px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-data-tabular text-label-sm">
+              Event ID: e7a9c840-3b21-4f11-9a42
+            </span>
+<span class="inline-flex items-center px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-data-tabular text-label-sm">
+              Org ID: org_728b9f
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">bolt</span> High-Concurrency Stream
+            </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+              Global Tech Summit 2025: AI &amp; Distributed Architecture
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Scale without bounds. A multi-track engineering conference dissecting deterministic runtime isolation, sub-millisecond edge synchronization, and enterprise autonomous orchestration.
+            </p>
+</div>
+<!-- Quick Metadata Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[24px]">event</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Date &amp; Duration</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Oct 24–25, 2025 (2 Days)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[24px]">location_on</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Venue &amp; Access</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Moscone West, SF &amp; Stream</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Credential Type</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Cryptographic RFID Badge</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric KPI Cards Row -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Capacity</span>
+<span class="font-data-metric text-data-metric text-on-surface font-bold">500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fixed venue quota</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Available Seats</span>
+<div class="flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-secondary-container font-bold" id="remainingSeatsDisplay">158</span>
+<span class="font-data-tabular text-body-sm text-on-surface-variant">/ 500</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">31.6% remaining</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Access Model</span>
+<span class="font-data-metric text-data-metric text-primary font-bold">Bearer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">JWT session verification</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Backend State</span>
+<span class="font-data-metric text-data-metric text-on-surface font-bold">200 OK</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-tabular">GET /api/events/id</span>
+</div>
+</div>
+<!-- Detailed Description & Program Architecture -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Executive Event Overview</h2>
+<div class="h-1 w-12 bg-primary rounded-full"></div>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-space-md leading-relaxed">
+<p>
+              The Global Tech Summit 2025 brings together senior software engineers, infrastructure architects, and machine learning research directors to evaluate the converging domains of extreme-scale microservices and autonomous distributed intelligence. Across 48 intensive hours, technical deep-dives will unpack strategies for zero-downtime consensus protocols, GPU cluster partitioning, and fault-tolerant state serialization.
+            </p>
+<p>
+              Attendees receive full production code repository access for live architectural teardowns, dedicated sandboxed labs with cluster credentials, and direct roundtables with core maintainers of industry-standard networking engines and distributed databases.
+            </p>
+</div>
+<!-- Structured Agenda Timeline -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Structured Agenda Schedule</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Day 1 Schedule Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">DAY 1 • Oct 24, 2025</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface">Cloud &amp; Orchestration</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">09:00 AM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Keynote: Sub-5ms Planetary State Replication</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Opening address with live multi-region node failover.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">11:30 AM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Technical Breakout: Deterministic Sharding</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hands-on trace debugging with distributed telemetry.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">03:00 PM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Panel: High-Throughput Event Brokers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Scalability battlecards: Kafka vs Pulsar vs Custom IPC.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Day 2 Schedule Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md text-secondary font-bold">DAY 2 • Oct 25, 2025</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface">LLMs &amp; Security</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">09:30 AM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Hardware Accelerators &amp; Model Compilation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maximizing tensor pipeline saturation on heterogeneous clouds.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">01:30 PM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Interactive Sandbox: Zero-Trust Event Mesh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Deploying mTLS and payload cryptographic verification.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-data-tabular text-body-sm text-on-surface font-semibold w-16">05:00 PM</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Executive Engineering Guild Mixer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private networking with platform architects &amp; sponsors.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Organizer Guild Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="A clean modern corporate circular avatar representing a verified technology alliance and engineering guild with deep purple geometric crest insignia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHZihB1Tqx4_8fQJ2JJInSEeNknx8raaUG5DY2tuvWF64VJGlhhI-x6kyrDgyzBgyyggx8ihMpp_Hy_FwD2zwqDv_0MWBwukvOavJzmfxyDY5skJe-IKYxth9fBSpUHTh8calldTKC2KkBA_OGPHzcXs9S8p_xcyT8NqByo8BxCK798h5b2RINC819b0JNOcXbptQt_2FnJTNSZg9-XwaQliV9owbizPOEcZA39MPH"/>
+<span class="material-symbols-outlined absolute -bottom-1 -right-1 text-[16px] text-tertiary bg-surface-container-lowest rounded-full p-0.5" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">TechHorizon Media &amp; Engineering Guild</span>
+<span class="inline-flex items-center text-label-sm font-label-sm text-tertiary font-semibold">Verified Organizer</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Host of 42 high-throughput summits • 99.98% seat SLA</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+                Contact Guild
+              </button>
+</div>
+</div>
+</div>
+<!-- Venue Location Visual Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Host Venue &amp; Spatial Layout</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Moscone Center West • 800 Howard St, San Francisco, CA</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface">Hall C &amp; D (Level 2)</span>
+</div>
+<div class="w-full h-56 bg-cover bg-center rounded-lg shadow-inner flex items-end p-space-md relative overflow-hidden" data-location="Moscone Center, San Francisco, California" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBn2DvMOSqBf9q8tD9Gb1URrUkHCvercNnD5R2ZoE7porDBtvR6I5xf2c-Tty9eY2MWIDvC1opgclh1gzDI6MN_BIqixtEHe8BpZtqsur5mA4aTJHltgjoxbWLG5Cl5-zt0AAh1nNGpomFI9XZW-Qsrlk2k2bPoCkCSt0JDzxCRwa8YJq0lpvIA0U2LiCsEhzgBcQ1hkM-Itys60iQNq0e4eWNfHQ3lfhMiZ0385kTX')">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between w-full text-inverse-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span>Direct transit via Powell St Station (4-min walk)</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium bg-inverse-surface/90 px-space-sm py-0.5 rounded">Security Checkpoint B</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Transactional Registration Card (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Registration Action Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<!-- Subtle color accent tab on top -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary-container"></div>
+<div class="flex items-center justify-between pt-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">Event Registration</h2>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold bg-tertiary-fixed px-space-xs py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Live Allotment
+            </span>
+</div>
+<!-- Capacity Bar Component -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-medium">Capacity Allocation</span>
+<span class="font-data-tabular font-bold text-on-surface" id="capacityRatio">342 / 500</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" id="capacityProgressBar" style="width: 68.4%;"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant pt-1">
+<span class="text-secondary font-medium" id="seatsStatusText">Seats Available</span>
+<span class="font-data-tabular">68.4% Filled</span>
+</div>
+</div>
+<!-- User State Badge -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between gap-space-sm transition-all duration-300" id="userStatusBanner">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-outline" id="userStatusIcon">info</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate" id="userStatusText">You are not yet registered for this event.</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex-shrink-0" id="toggleRegisteredDemoBtn" title="Toggle Mock User State" type="button">
+              Demo Flip
+            </button>
+</div>
+<!-- Pricing & Inclusions -->
+<div class="flex items-baseline justify-between py-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Registration Tier</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Standard Pass</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">$0.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ Free</span>
+</div>
+</div>
+<!-- Primary CTA Button (High-Contrast Orange #F47721) -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full py-3 px-space-md rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md font-bold tracking-wide transition-all shadow hover:shadow-md active:scale-[0.99] flex items-center justify-center gap-space-xs" id="openRegisterModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span id="registerBtnLabel">Register for Event</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center leading-snug">
+              Instant confirmation via Supabase auth session. Guaranteed seat allocation.
+            </p>
+</div>
+<!-- Guaranteed Perks Checklist -->
+<div class="pt-space-xs flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Direct access to full session video recordings</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Discord Guild private speaker backstage channel</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Instant verifiable cryptographic badge hash</span>
+</div>
+</div>
+</div>
+<!-- API Contract & Integration Box (Linear/Stripe style) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm font-data-tabular">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span>
+              API Integration Contract
+            </span>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed text-label-sm font-semibold">POST</span>
+</div>
+<div class="bg-inverse-surface text-inverse-on-surface p-space-sm rounded-lg text-body-sm overflow-x-auto">
+<div class="text-tertiary-fixed-dim text-label-sm mb-1">// Endpoint Schema</div>
+<div class="text-secondary-fixed">POST /api/registrations</div>
+<div class="text-outline-variant mt-1">Authorization: Bearer &lt;session_token&gt;</div>
+<pre class="text-primary-fixed mt-1 font-data-tabular leading-tight">{
+  "event_id": "e7a9c840-3b21-4f11-9a42",
+  "attendee_meta": {
+    "source": "portal_web",
+    "tier": "standard"
+  }
+}</pre>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant pt-1">
+<span>Conflict Response:</span>
+<span class="font-semibold text-error">409 Conflict (Seat/Duplicate)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Confirmation Modal Backdrop & Dialog -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity duration-200" id="registrationModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden flex flex-col transform transition-all duration-200 scale-95" id="modalDialog">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">confirmation_number</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Confirm Your Registration</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Transactional Seat Reservation</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="closeModalCross" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Selected Event</span>
+<span class="font-data-tabular">Oct 24–25, 2025</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Global Tech Summit 2025: AI &amp; Distributed Architecture</span>
+<div class="flex items-center gap-space-sm pt-1">
+<span class="font-data-tabular text-body-sm text-on-surface-variant">Linked User ID:</span>
+<span class="font-data-tabular text-body-sm font-semibold text-primary">usr_4981fa</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          You are registering for <strong class="text-on-surface">Global Tech Summit 2025</strong>. Your ticket will be linked immediately to your account profile. Once confirmed, a seat will be reserved and locked from the remaining <strong class="text-on-surface">158 spots</strong>.
+        </p>
+<!-- Warning / Idempotency Notice -->
+<div class="p-space-sm rounded-lg bg-error-container/40 flex items-start gap-space-xs text-error font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] flex-shrink-0 mt-0.5">policy</span>
+<div>
+<strong class="font-semibold">Integrity Protocol:</strong> Duplicate registrations are strictly prevented via database unique constraints (<code class="bg-surface-container-lowest px-1 rounded text-on-surface font-data-tabular text-label-sm">409 Conflict</code> handling).
+          </div>
+</div>
+<!-- Simulation Error Trigger -->
+<div class="flex items-center justify-between pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4" id="simulateConflictCheckbox" type="checkbox"/>
+<span>Simulate duplicate registration (HTTP 409)</span>
+</label>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-space-xs" id="confirmRegisterBtn" type="button">
+<span class="material-symbols-outlined text-[18px] animate-spin hidden" id="spinnerIcon">progress_activity</span>
+<span id="confirmBtnText">Confirm &amp; Secure Seat</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback Container -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-space-xs pointer-events-none" id="toastContainer">
+<!-- Success Toast (Hidden by default) -->
+<div class="pointer-events-auto transform translate-y-8 opacity-0 transition-all duration-300 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center gap-space-sm max-w-md" id="toastSuccess">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface">Registration Confirmed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">HTTP 201 Created • Seat allocated successfully.</span>
+</div>
+</div>
+<!-- 409 Conflict Toast (Hidden by default) -->
+<div class="pointer-events-auto transform translate-y-8 opacity-0 transition-all duration-300 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center gap-space-sm max-w-md" id="toastConflict">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">error_outline</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-error">HTTP 409: Conflict</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">User usr_4981fa already possesses a confirmed seat.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Registration Experience -->
+<script>
+  (function() {
+    let isRegistered = false;
+    let availableSeats = 158;
+    let totalSeats = 500;
+
+    const modal = document.getElementById('registrationModal');
+    const modalDialog = document.getElementById('modalDialog');
+    const openBtn = document.getElementById('openRegisterModalBtn');
+    const closeBtn = document.getElementById('cancelModalBtn');
+    const closeCross = document.getElementById('closeModalCross');
+    const confirmBtn = document.getElementById('confirmRegisterBtn');
+    const confirmBtnText = document.getElementById('confirmBtnText');
+    const spinner = document.getElementById('spinnerIcon');
+    const toggleDemoBtn = document.getElementById('toggleRegisteredDemoBtn');
+    const conflictCheckbox = document.getElementById('simulateConflictCheckbox');
+
+    const toastSuccess = document.getElementById('toastSuccess');
+    const toastConflict = document.getElementById('toastConflict');
+
+    const userStatusBanner = document.getElementById('userStatusBanner');
+    const userStatusText = document.getElementById('userStatusText');
+    const userStatusIcon = document.getElementById('userStatusIcon');
+    const registerBtnLabel = document.getElementById('registerBtnLabel');
+    const remainingSeatsDisplay = document.getElementById('remainingSeatsDisplay');
+    const capacityRatio = document.getElementById('capacityRatio');
+    const capacityProgressBar = document.getElementById('capacityProgressBar');
+    const seatsStatusText = document.getElementById('seatsStatusText');
+
+    function updateRegisteredUI(state) {
+      isRegistered = state;
+      if (isRegistered) {
+        userStatusBanner.className = "p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-between gap-space-sm transition-all duration-300";
+        userStatusIcon.innerText = "check_circle";
+        userStatusIcon.className = "material-symbols-outlined text-[18px] text-tertiary";
+        userStatusText.innerText = "Registered on Oct 14, 2025 (Confirmed)";
+        userStatusText.className = "font-label-sm text-label-sm text-on-tertiary-fixed font-semibold truncate";
+
+        openBtn.className = "w-full py-3 px-space-md rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md font-semibold transition-all shadow-none flex items-center justify-center gap-space-xs cursor-default";
+        registerBtnLabel.innerText = "Pass Claimed (View Badge)";
+        
+        let booked = totalSeats - availableSeats;
+        capacityRatio.innerText = `${booked} / ${totalSeats}`;
+        let percent = (booked / totalSeats) * 100;
+        capacityProgressBar.style.width = `${percent}%`;
+        remainingSeatsDisplay.innerText = availableSeats;
+      } else {
+        userStatusBanner.className = "p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between gap-space-sm transition-all duration-300";
+        userStatusIcon.innerText = "info";
+        userStatusIcon.className = "material-symbols-outlined text-[18px] text-outline";
+        userStatusText.innerText = "You are not yet registered for this event.";
+        userStatusText.className = "font-label-sm text-label-sm text-on-surface-variant truncate";
+
+        openBtn.className = "w-full py-3 px-space-md rounded-lg bg-secondary-container hover:bg-secondary text-on-secondary font-label-md text-label-md font-bold tracking-wide transition-all shadow hover:shadow-md active:scale-[0.99] flex items-center justify-center gap-space-xs";
+        registerBtnLabel.innerText = "Register for Event";
+        
+        let booked = totalSeats - availableSeats;
+        capacityRatio.innerText = `${booked} / ${totalSeats}`;
+        let percent = (booked / totalSeats) * 100;
+        capacityProgressBar.style.width = `${percent}%`;
+        remainingSeatsDisplay.innerText = availableSeats;
+      }
+    }
+
+    function showModal() {
+      if (isRegistered) {
+        showToast(toastConflict);
+        return;
+      }
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modalDialog.classList.remove('scale-95');
+        modalDialog.classList.add('scale-100');
+      }, 10);
+    }
+
+    function hideModal() {
+      modalDialog.classList.remove('scale-100');
+      modalDialog.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 150);
+    }
+
+    function showToast(toastEl) {
+      toastEl.classList.remove('opacity-0', 'translate-y-8');
+      toastEl.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toastEl.classList.remove('opacity-100', 'translate-y-0');
+        toastEl.classList.add('opacity-0', 'translate-y-8');
+      }, 4000);
+    }
+
+    openBtn.addEventListener('click', () => {
+      showModal();
+    });
+
+    closeBtn.addEventListener('click', hideModal);
+    closeCross.addEventListener('click', hideModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) hideModal();
+    });
+
+    toggleDemoBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!isRegistered) {
+        availableSeats = 157;
+        updateRegisteredUI(true);
+      } else {
+        availableSeats = 158;
+        updateRegisteredUI(false);
+      }
+    });
+
+    confirmBtn.addEventListener('click', () => {
+      spinner.classList.remove('hidden');
+      confirmBtnText.innerText = "Reserving...";
+      confirmBtn.disabled = true;
+
+      // Simulate network request to POST /api/registrations
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        confirmBtnText.innerText = "Confirm & Secure Seat";
+        confirmBtn.disabled = false;
+        hideModal();
+
+        if (conflictCheckbox.checked) {
+          // Trigger 409 Conflict toast simulation
+          showToast(toastConflict);
+        } else {
+          // Success
+          availableSeats = Math.max(0, availableSeats - 1);
+          updateRegisteredUI(true);
+          showToast(toastSuccess);
+        }
+      }, 800);
+    });
+
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest py-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 EventPulse Infrastructure Ltd. High-throughput event operations.</span><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="system-status" href="#">System Status</a></div></div></footer></body></html>

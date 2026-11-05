@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#fcf8ff", "primary-fixed": "#e8deff", "inverse-on-surface": "#f2efff", "on-secondary-container": "#622800", "surface": "#fcf8ff", "on-surface": "#1a1a28", "on-primary-fixed": "#20005f", "surface-container": "#efecff", "on-error-container": "#93000a", "outline-variant": "#cac4d5", "secondary-container": "#ff7f2a", "error": "#ba1a1a", "on-tertiary-fixed": "#002113", "on-secondary-fixed-variant": "#773300", "tertiary-fixed-dim": "#4edea3", "inverse-surface": "#2f2f3e", "inverse-primary": "#cdbdff", "primary": "#3f139d", "surface-container-highest": "#e3e0f4", "surface-container-low": "#f5f2ff", "surface-container-lowest": "#ffffff", "surface-tint": "#6646c5", "primary-container": "#5634b4", "tertiary-container": "#005a3c", "tertiary": "#00402a", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#4e2aac", "on-secondary-fixed": "#331200", "on-tertiary-fixed-variant": "#005236", "background": "#fcf8ff", "on-background": "#1a1a28", "secondary": "#9c4500", "on-surface-variant": "#494553", "surface-dim": "#dad8ec", "error-container": "#ffdad6", "surface-container-high": "#e9e6fa", "on-primary-container": "#c7b6ff", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#cdbdff", "on-tertiary-container": "#46d89d", "secondary-fixed-dim": "#ffb68e", "on-error": "#ffffff", "secondary-fixed": "#ffdbca", "on-primary": "#ffffff", "outline": "#7a7585", "on-tertiary": "#ffffff", "surface-variant": "#e3e0f4" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-sm": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "gutter-sm": "1rem", "margin": "2rem", "gutter": "1.5rem" }, fontFamily: { "body-sm": ["Inter"], "data-tabular": ["Inter"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "data-metric": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-tabular": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "data-metric": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-surface-container-highest z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-surface-container-highest"><img alt="EventPulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VjuFDCPp_-L-wDQI8-K5zdOnv_RySNSJ-zph-sagTAZJOuvcLfSgA1nRcB5hudoBfgSmXtCqLhCtBtr8b8uNSUEmB4_P412-D4QXOmCPgtzOIJrz3yjbUJjLefw012GPHvs_L8QMh0xssGe_gyhQoSTacyqWKIA43AsWsTl62SjIj5dNq_kYY6Lh_uhYQDDllJuDDXYAsiR7--1I7mo5mxAVB4SjoH3DUNms87HXe1Pg"/><span class="font-headline-sm text-headline-sm text-primary">EventPulse</span></div><div class="p-space-md"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-space-xs">Operations</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="organizer-portal" href="#"><span class="material-symbols-outlined text-headline-sm">grid_view</span>Portal Overview</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="attendee-manifest" href="#"><span class="material-symbols-outlined text-headline-sm">group</span>Attendee Manifest</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="credential-operations" href="#"><span class="material-symbols-outlined text-headline-sm">badge</span>Credentials &amp; Badges</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="ticketing-tiers" href="#"><span class="material-symbols-outlined text-headline-sm">confirmation_number</span>Ticketing Tiers</a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="analytics-and-capacity" href="#"><span class="material-symbols-outlined text-headline-sm">monitoring</span>Analytics &amp; Capacity</a></nav><div class="mt-space-lg px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-space-xs">Developer</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="documentation-and-api" href="#"><span class="material-symbols-outlined text-headline-sm">code</span>API Keys &amp; Webhooks</a></nav></div></div><div class="p-space-md border-t border-surface-container-highest"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoBktYDvkxRYQyFQnjuFPCMPINOcUPQrqjfagUWUiiHvX3UHXKUSq3OAXZ38Sxk7dKZ2OR7gXaBuVsALDveyjcvBYtWVhaNSyAUkuIfPICCu0i2df4BD_Pg3TCTZzUEg58xDSIIbmICRvgYbcn0cd4SUh6U7bzIzBCyFnA1roD9AR33i6DCiEbc_MascVqGXqSlnuvueL0dBr-FIS4mS_OC_LAsFFA5LKZAPiPt7gd"/><div><p class="font-label-sm text-label-sm text-on-surface font-semibold">Ops Lead</p><p class="font-body-sm text-body-sm text-on-surface-variant">Organizer</p></div></div><a class="text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-headline-sm">logout</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest z-40 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><nav class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant" data-active-classes="text-on-surface font-semibold"><a aria-current="page" class="transition-colors text-on-surface font-semibold" data-path="organizer-portal" href="#">Organizer</a><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">Management Console</span></nav></div><div class="flex items-center gap-space-md"><span class="inline-flex items-center px-space-sm py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm border border-outline-variant">Role: Organizer</span><button class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-path="create-event" href="#">Create Event</a></div></header><main class="relative pt-16 bg-background min-h-screen px-margin py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Role Authorization & API Context System Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm px-space-md py-space-xs rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+        Role: Organizer
+      </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm truncate">
+        Verified via Database Context <code class="font-data-tabular text-on-surface bg-surface-container-highest px-1.5 py-0.5 rounded">users.role: organizer</code>
+</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-tertiary-container/15 text-tertiary font-data-tabular text-data-tabular">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+        GET /api/events?organizer_id=usr_92a7f8e1
+      </span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">200 OK</span>
+</div>
+</div>
+<!-- Dashboard Header & Top Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Organizer Portal</span>
+<span class="text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Overview</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Manage Your Hosted Events</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Monitor real-time capacity thresholds, sync credentials, and review attendee registries.
+      </p>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative inline-block text-left">
+<button class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm" id="filterBtn" type="button">
+<span class="material-symbols-outlined text-base">filter_list</span>
+<span>Status: All</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors shadow-sm" onclick="triggerExportNotice()" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+        Export CSV Data
+      </button>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary-container text-on-primary font-label-md text-label-md hover:opacity-95 active:scale-95 transition-all shadow-sm" data-path="create-event" href="#">
+<span class="material-symbols-outlined text-base">add</span>
+        Create New Event
+      </a>
+</div>
+</div>
+<!-- Summary Metrics KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Events Hosted</span>
+<div class="p-2 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">8</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Events</span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm">
+            Active: 6
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+            Draft: 2
+          </span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Aggregate Capacity</span>
+<div class="p-2 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-base">stadium</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">1,850</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Seats Allocated</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm text-primary">domain</span>
+<span>Across 5 active physical venues</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Total Confirmed Attendees</span>
+<div class="p-2 rounded-lg bg-secondary-fixed text-on-secondary-container">
+<span class="material-symbols-outlined text-base">how_to_reg</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">1,420</span>
+<span class="font-label-md text-label-md text-on-secondary-container font-semibold">76.7% occupancy</span>
+</div>
+<div class="mt-2.5 w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 76.7%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Available Remaining</span>
+<div class="p-2 rounded-lg bg-tertiary-container/15 text-tertiary">
+<span class="material-symbols-outlined text-base">event_seat</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">430</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Seats Open</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-tertiary font-body-sm text-body-sm font-medium">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>Velocity: +38 tickets / 24h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Break / Featured Venue Snapshot Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Visual Venue Highlight Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-start justify-between z-10">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Primary Hub</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Metropolitan Innovation Center</h2>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-container-high font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-xs">pin_drop</span> San Francisco, CA
+        </span>
+</div>
+<div class="flex items-end justify-between z-10 pt-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm" data-alt="High angle architectural view of a bright minimalist tech conference auditorium with staggered wooden seats, gentle diffused glass canopy lighting, modern corporate attendees walking in background, soft violet tone accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtGmCtq_Y720BbHeiY367Mg8pWyUMUfLU3UwLXmvbiu_rcPaXYyXZO0ku4kpzS0_GlzmWK2rgeuq7OhguZzhkWLINHyz0mrTweB8B4d0gu6MqjopylOUakcR-eyYXMn3b5GnLO92C-1oNbeBBz_5Jshq6Z4ZcQBQuEEtc5uk8rAKA42T99L-uZefp9Mg9t31OhhZjTHrMfScw1fJN04K8UOCjekOiydvni_DWnCzlj"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Main Stage &amp; Keynote Suites</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hosting Global Tech Summit</p>
+</div>
+</div>
+<span class="font-data-tabular text-data-tabular text-primary font-semibold">500 Capacity</span>
+</div>
+</div>
+<!-- Active Registration Momentum Chart -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Registration Velocity</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Weekly Run Rate</h3>
+</div>
+<span class="font-data-tabular text-data-tabular text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded-lg font-semibold">+18.4% vs last week</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<div class="py-2">
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 300 48">
+<path d="M0 42 C 40 40, 60 28, 90 32 C 120 36, 140 18, 170 22 C 200 26, 230 10, 260 14 C 280 16, 290 4, 300 6" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 42 C 40 40, 60 28, 90 32 C 120 36, 140 18, 170 22 C 200 26, 230 10, 260 14 C 280 16, 290 4, 300 6 L 300 48 L 0 48 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-data-tabular text-data-tabular">
+<span>Mon: 112</span>
+<span>Wed: 184</span>
+<span>Fri: 290</span>
+<span class="text-on-surface font-semibold">Today: 342</span>
+</div>
+</div>
+<!-- Badge Printing & Credential Readiness -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between min-h-[160px]">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Credential System</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Badges Issued</h3>
+</div>
+<a class="text-primary hover:text-primary-container" data-path="credential-operations" href="#">
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+</div>
+<div class="flex items-center gap-4 my-auto">
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-data-tabular text-data-tabular font-bold text-on-surface">88%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">1,250 Badges Queued</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1,100 Ready for onsite instant print</span>
+</div>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Auto-sync active with physical badge printers</span>
+</div>
+</div>
+</div>
+<!-- Events Organised Data Table & Management View -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Toolbar -->
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Events Organised by Current User</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Authoritative database view linked to <code class="font-data-tabular text-on-surface bg-surface-container-low px-1 py-0.5 rounded">events.organizer_id</code>.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<input class="h-[38px] pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary w-64 transition-all" id="searchInput" placeholder="Search event title or ID..." type="text"/>
+<span class="material-symbols-outlined text-base text-on-surface-variant absolute left-2.5 top-2.5">search</span>
+</div>
+<button class="h-[38px] px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Columns</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Event Title &amp; Identifier</th>
+<th class="py-3 px-space-md font-semibold">Status</th>
+<th class="py-3 px-space-md font-semibold">Capacity</th>
+<th class="py-3 px-space-md font-semibold min-w-[200px]">Registration Volume</th>
+<th class="py-3 px-space-md font-semibold text-right">Occupancy</th>
+<th class="py-3 px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/60 font-body-md text-body-md text-on-surface" id="eventsTableBody">
+<!-- Row 1: Global Tech Summit 2025 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">
+                  GTS
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">Global Tech Summit 2025</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant text-xs">id: evt_91fa4bc8-7201</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                OPEN
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-data-tabular text-on-surface">
+              500 seats
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-data-tabular text-data-tabular text-xs">
+<span class="font-semibold text-on-surface">342 confirmed</span>
+<span class="text-on-surface-variant">158 left</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all" style="width: 68.4%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-data-tabular text-data-tabular font-semibold text-on-surface">
+              68%
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-2">
+<a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors font-semibold" data-path="attendee-manifest" href="#">
+<span class="material-symbols-outlined text-sm">groups</span>
+                  View Attendees (342)
+                </a>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Event" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Manage Status" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Founders & VC Networking Breakfast -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-container flex items-center justify-center font-bold text-xs">
+                  FVC
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">Founders &amp; VC Networking Breakfast</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant text-xs">id: evt_b82a17ef-3310</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-secondary-fixed text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                OPEN (ALMOST FULL)
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-data-tabular text-on-surface">
+              120 seats
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-data-tabular text-data-tabular text-xs">
+<span class="font-semibold text-secondary">118 confirmed</span>
+<span class="text-secondary font-medium">2 left</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all" style="width: 98.3%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-data-tabular text-data-tabular font-bold text-secondary">
+              98%
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-2">
+<a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors font-semibold" data-path="attendee-manifest" href="#">
+<span class="material-symbols-outlined text-sm">groups</span>
+                  View Attendees (118)
+                </a>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Event" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Manage Status" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Kubernetes Intensive -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold text-xs">
+                  K8S
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">Kubernetes Intensive</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant text-xs">id: evt_4ca39890-501b</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                SOLD OUT
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-data-tabular text-on-surface">
+              75 seats
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-data-tabular text-data-tabular text-xs">
+<span class="font-semibold text-on-surface">75 confirmed</span>
+<span class="text-error font-medium">Waitlist: 19</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full transition-all" style="width: 100%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-data-tabular text-data-tabular font-bold text-error">
+              100%
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-2">
+<a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors font-semibold" data-path="attendee-manifest" href="#">
+<span class="material-symbols-outlined text-sm">groups</span>
+                  View Attendees (75)
+                </a>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Event" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Manage Status" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: AI Engineers Hackathon -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-xs">
+                  AIH
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">AI Engineers Hackathon</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant text-xs">id: evt_f59c1182-0044</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                PUBLISHED
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-data-tabular text-on-surface">
+              200 seats
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-data-tabular text-data-tabular text-xs">
+<span class="font-semibold text-on-surface">145 confirmed</span>
+<span class="text-on-surface-variant">55 left</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all" style="width: 72.5%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-data-tabular text-data-tabular font-semibold text-on-surface">
+              72%
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-2">
+<a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors font-semibold" data-path="attendee-manifest" href="#">
+<span class="material-symbols-outlined text-sm">groups</span>
+                  View Attendees (145)
+                </a>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Event" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Manage Status" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Quarterly Design Sync -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-xs">
+                  QDS
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">Quarterly Design Sync</span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant text-xs">id: evt_09e73bca-2299</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                DRAFT
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-data-tabular text-data-tabular text-on-surface">
+              50 seats
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-data-tabular text-data-tabular text-xs">
+<span class="text-on-surface-variant">0 registered</span>
+<span class="text-on-surface-variant">50 available</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full transition-all" style="width: 0%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-data-tabular text-data-tabular font-medium text-on-surface-variant">
+              0%
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-2">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-secondary-container text-on-primary font-label-sm text-label-sm hover:opacity-95 transition-all font-semibold shadow-sm" onclick="publishQuickEvent(this)" type="button">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+                  Publish Event
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Event" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Manage Status" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 5 of 8 registered events</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-outline opacity-50 cursor-not-allowed" disabled="" type="button">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-semibold" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors" type="button">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Operational Health & Fast Actions Panel -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pb-space-lg">
+<!-- Capacity Utilization Alerts -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-secondary-container">notification_important</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Capacity Guard &amp; Waitlists</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Two events are above the 85% safety threshold. Automated scalers can increase room capacities or redirect to secondary streaming halls.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+          Expand Capacity Limits
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+          Manage Waitlist Rules
+        </button>
+</div>
+</div>
+<!-- Organizer API Sync Status -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">sync_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Webhook &amp; Sync Feeds</h3>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded-lg">Healthy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Last sync was completed 3 minutes ago. Outgoing payload <code class="font-data-tabular text-on-surface bg-surface-container-low px-1 py-0.5 rounded">event.registration.created</code> delivery rate is 99.98%.
+      </p>
+<div class="flex items-center gap-space-sm">
+<a class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors inline-flex items-center gap-1" data-path="documentation-and-api" href="#">
+<span class="material-symbols-outlined text-sm">terminal</span>
+          View Webhook Logs
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function triggerExportNotice() {
+    alert("Export initiated for organizer_id=usr_92a7f8e1. CSV generation completed. Download started.");
+  }
+
+  function publishQuickEvent(btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">refresh</span> Publishing...';
+    setTimeout(() => {
+      btn.className = "inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-semibold";
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check_circle</span> Published';
+    }, 700);
+  }
+
+  // Quick Client Search Filter
+  document.getElementById('searchInput')?.addEventListener('input', function(e) {
+    const val = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#eventsTableBody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(val) ? '' : 'none';
+    });
+  });
+</script></main></div></body></html>
