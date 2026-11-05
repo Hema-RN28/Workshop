@@ -1,11 +1,12 @@
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from postgrest import APIError
 from supabase import Client, create_client
 
-load_dotenv()
+load_dotenv(Path(__file__).with_name(".env"))
 
 SUPABASE_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY")
