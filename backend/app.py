@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+from flask_cors import CORS
 from flask import Flask, jsonify, request
 from postgrest import APIError
 from supabase import Client, create_client
@@ -12,6 +13,7 @@ SUPABASE_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY")
 
 app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": os.environ.get("FRONTEND_ORIGIN", "http://localhost:5173")}})
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
